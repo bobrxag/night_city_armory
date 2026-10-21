@@ -1,0 +1,120 @@
+/* ===== Общие настройки ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.6;
+  background: #0d0a16;
+  color: #e6e3f0;
+}
+
+a { color: #00f0ff; }
+
+/* ===== Шапка и меню ===== */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  padding: 16px 20px;
+  background: #14101f;
+  border-bottom: 3px solid #fcee0a;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #fcee0a;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.brand img { width: 44px; height: 44px; }
+
+.menu { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+
+.menu a {
+  padding: 8px 16px;
+  color: #e6e3f0;
+  text-decoration: none;
+  border: 1px solid #3a3050;
+}
+
+.menu a:hover { border-color: #00f0ff; color: #00f0ff; }
+.menu a.active { background: #ff2a6d; border-color: #ff2a6d; color: #fff; }
+
+/* ===== Основное содержимое ===== */
+.main { max-width: 1000px; margin: 0 auto; padding: 32px 20px; }
+
+h1 { font-size: 36px; line-height: 1.15; margin: 0 0 16px; color: #fcee0a; }
+h2 { font-size: 24px; margin: 32px 0 12px; color: #00f0ff; }
+
+.lead { font-size: 18px; max-width: 640px; }
+
+/* ===== Карточки ===== */
+.cards { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+
+.card {
+  flex: 1;
+  padding: 20px;
+  background: #1a1428;
+  border: 1px solid #3a3050;
+  border-left: 4px solid #ff2a6d;
+}
+
+.card h3 { margin: 0 0 8px; color: #fff; }
+.card p { margin: 0 0 12px; }
+
+.type { color: #00f0ff; font-size: 14px; }
+.price { color: #fcee0a; font-size: 20px; font-weight: bold; }
+
+/* ===== Кнопка ===== */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fcee0a;
+  color: #0d0a16;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover { background: #ff2a6d; color: #fff; }
+
+/* ===== Форма ===== */
+.form { display: flex; flex-direction: column; gap: 8px; max-width: 520px; }
+
+.form input, .form textarea {
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  background: #14101f;
+  color: #e6e3f0;
+  border: 1px solid #3a3050;
+}
+
+.form input:focus, .form textarea:focus { outline: 2px solid #00f0ff; }
+.form button { align-self: flex-start; margin-top: 8px; }
+
+/* ===== Подвал ===== */
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #8f87a8;
+  border-top: 1px solid #3a3050;
+}
+
+/* ===== Адаптив: широкие экраны ===== */
+@media (min-width: 768px) {
+  .header { flex-direction: row; justify-content: space-between; }
+  .cards { flex-direction: row; flex-wrap: wrap; }
+  .card { flex: 1 1 280px; }
+  h1 { font-size: 48px; }
+}

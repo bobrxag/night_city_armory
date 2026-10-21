@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обратная связь — NIGHT CITY ARMORY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <img src="img/logo.svg" alt="Логотип Night City Armory">
+      NIGHT CITY ARMORY
+    </a>
+    <nav class="menu">
+      <a href="index.html">О проекте</a>
+      <a href="shop.html">Магазин</a>
+      <a href="contacts.html" class="active">Обратная связь</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1>Обратная связь</h1>
+    <p class="lead">Хотите сделать заказ или задать вопрос? Заполните форму.</p>
+
+    <form class="form" action="mailto:artemsviridov576@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Ваше имя</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Электронная почта</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Сообщение</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button class="button" type="submit">Отправить сообщение</button>
+    </form>
+
+    <h2>Другие способы связи</h2>
+    <p>Почта: <a href="mailto:artemsviridov576@gmail.com">artemsviridov576@gmail.com</a></p>
+    <p>Адрес: Найт-Сити, Уотсон, склад №7 (вымышленный).</p>
+  </main>
+
+  <footer class="footer">
+    <p>NIGHT CITY ARMORY — учебный фан-проект. Не является настоящим магазином.</p>
+  </footer>
+</body>
+</html>
